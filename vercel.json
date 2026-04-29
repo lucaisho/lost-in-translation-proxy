@@ -3,5 +3,8 @@
     "api/gemini.js": {
       "maxDuration": 60
     }
-  }
+  },
+  "routes": [
+    { "src": "/privacy.html", "dest": "/public/privacy.html" }
+  ]
 }
