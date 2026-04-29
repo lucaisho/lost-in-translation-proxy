@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost in Translation — Privacy Policy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #1a3a5c; --amber: #e8a020; --bg: #f4f7fb; --white: #fff; --border: #d0dce8; --text: #1a1a2e; --muted: #5a6a7a; }
+      body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); padding: 48px 24px; line-height: 1.7; }
+  .wrapper { max-width: 680px; margin: 0 auto; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--amber); font-weight: 600; margin-bottom: 8px; }
+  h1 { font-size: 26px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--navy); margin: 32px 0 10px; }
+  p { font-size: 14px; color: var(--text); margin-bottom: 12px; }
+  ul { font-size: 14px; color: var(--text); margin: 0 0 12px 20px; }
+  ul li { margin-bottom: 6px; }
+  .card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 40px; }
+  .card p { margin: 0; font-size: 13px; color: var(--muted); }
+  a { color: var(--navy); }
+</style>
+    </head>
+    <body>
+    <div class="wrapper">
+      <div class="eyebrow">Chrome Extension</div>
+      <h1>Lost in Translation — Privacy Policy</h1>
+  <p class="meta">Last updated: April 2026</p>
+      <h2>Overview</h2>
+      <p>Lost in Translation is a Chrome extension that audits in-language web pages for English bleed, translation issues, and meta tag gaps. This privacy policy explains what data the extension accesses, how it is used, and what is not collected or stored.</p>
+  <h2>Data accessed during an audit</h2>
+      <p>When you run an audit, the extension accesses the following from the active browser tab:</p>
+      <ul>
+        <li>The visible text content of the page being audited</li>
+      <li>The page URL</li>
+    <li>HTML meta tags (title, meta description, Open Graph tags, canonical tag)</li>
+        <li>Same-domain hyperlinks present on the page</li>
+      </ul>
+      <p>For in-language pages, the extension also silently loads the equivalent English (EN-US) version of the same URL in a background tab to compare meta tag values.</p>
+  <h2>How data is used</h2>
+  <p>The page text and meta tag content collected above is sent to a secure serverless proxy hosted on Vercel, which forwards the request to the Google Gemini API for linguistic analysis. The analysis identifies potential translation issues and meta tag gaps and returns findings to the extension for display and export.</p>
+  <p>Data is transmitted solely for the purpose of generating audit findings. It is not used for any other purpose.</p>
+  <h2>Data retention</h2>
+  <p>The extension does not store, log, or retain any page content, URLs, or analysis results. Data sent to the Vercel proxy is processed in real time and not persisted. No database or external storage is used.</p>
+      <h2>What is not collected</h2>
+    <ul>
+        <li>No personally identifiable information (PII)</li>
+        <li>No login credentials or authentication tokens</li>
+        <li>No browsing history</li>
+    <li>No data from pages the extension is not actively auditing</li>
+        <li>No financial or payment information</li>
+  </ul>
+  <h2>Third-party services</h2>
+  <p>The extension uses the following third-party services:</p>
+  <ul>
+    <li><strong>Google Gemini API</strong> — page text is sent to Gemini for linguistic analysis. Google's privacy policy: https://policies.google.com/privacy</li>
+        <li><strong>Vercel</strong> — the serverless proxy is hosted on Vercel. Vercel's privacy policy: https://vercel.com/legal/privacy-policy</li>
+  </ul>
+      <h2>Permissions</h2>
+  <p>The extension requests the following Chrome permissions:</p>
+      <ul>
+    <li
